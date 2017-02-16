@@ -1020,7 +1020,7 @@ input[type="checkbox"] +label:disabled::before {
   float: left;
   width: 360px;
   margin-right: 40px;
-  margin-bottom: 28px;
+  margin-bottom: 32px;
   position: relative;
 }
 
