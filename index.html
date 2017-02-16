@@ -2,7 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>Нёрдс</title>
+    <title>NЁRDS DESIGN STUDIO</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
@@ -22,18 +22,18 @@
                 <a href="#">Клиенты</a>
               </li>
               <li>
-                <a href="#">Магазин</a>
+                <a href="catalog.html">Магазин</a>
               </li>
               <li>
                 <a href="#">Контакты</a>
               </li>
-              <li>
-                <a class="basket" href="#">Корзина</a>
-              </li>
             </ul>
           </div>
+          <div class="basket-block">
+            <a href="#">Корзина</a>
+          </div>
         </nav>
-        
+         
         <div class="slider">
           <input type="radio" id="btn-1" name="toggle" class="active" checked>
           <input type="radio" id="btn-2" name="toggle">
@@ -95,7 +95,7 @@
 
         <div class="index-content clearfix">
           <div class="index-content-left">
-            <b>Мы - маленькая, но гордая дизайн-студия из Краснодара.</b>
+            <b>Мы &#8212; маленькая, но гордая дизайн-студия из Краснодара.</b>
             <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
             <span>Выполняем заказы на разработку:</span>
             <ul class="list">
@@ -106,7 +106,7 @@
           </div>
 
           <div class="index-content-right">
-            <img src="img/mini-logo-2.jpg" width="360" height="208" alt="Нёрдс"><br>
+            <img src="img/mini-logo-2.jpg" width="360" height="208" alt="Нёрдс">
             <span class="head">С 2004 года любим точность во всем:</span>
             <div class="advantages clearfix">
               <div class="advantages-name">
@@ -133,7 +133,7 @@
             <a href="#"><img src="img/barbershop-logo.png" width="209" height="90" alt="Барбершоп «Бородинский»"></a>
           </div>
           <div class="examples-logo example-3">
-            <a href="#"><img src="img/pink-logo.png" width="185" height="52 alt="PINK"></a>
+            <a href="#"><img src="img/pink-logo.png" width="185" height="52" alt="PINK"></a>
           </div>
           <div class="examples-logo example-4">
             <a href="#"><img src="img/mishka-logo.png" width="173" height="84" alt="MISHKA"></a>
@@ -147,7 +147,7 @@
             <span>NЁRDS DESIGN STUDIO</span>
             <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
             <p>тел. +7 (812) 275-75-75</p>
-            <a class="btn" href="#">Напишите нам</a>
+            <a class="btn js-open-form" href="#">Напишите нам</a>
           </section>
         </div>
       </section>
@@ -168,5 +168,29 @@
         </div>
       </div>
     </footer>
+
+    <div class="modal-content">
+      <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
+      <h2 class="modal-content-title">Напишите нам</h2>
+      <form class="write-form" action="https://echo.htmlacademy.ru" method="post">
+        <div class="clearfix">
+          <label class="form-column-left">
+            <span>Ваше имя:</span>
+            <input type="text" name="username" placeholder="Представьтесь, пожалуйста">
+          </label>
+          <label class="form-column-right">
+            <span>Ваш e-mail:</span>
+            <input type="email"  name="email" placeholder="Для отправки ответа">
+          </label>
+        </div>
+        <label>
+          <span>Текст письма:</span>
+          <textarea class="letter-user" name="letter" id="letter-field">В свободной форме</textarea>
+        </label>
+        <button class="btn login-btn" type="submit">Отправить</button>
+      </form>
+    </div>
+
+    <script src="js/form.js"></script>
   </body>
 </html>
