@@ -24,7 +24,7 @@ body {
   float: left;
   width: 160px;
   margin-top: 49px;
-  margin-right: 198px;
+  margin-right: 200px;
 }
 
 .mini-logo:hover {
@@ -38,7 +38,7 @@ body {
 .navigation {
   float: left;
   width: 600px; 
-  margin-top: 75px;
+  margin-top: 74px;
 }
 
 .navigation ul {
@@ -63,7 +63,7 @@ body {
   color: #000000;
   vertical-align: middle;
   text-transform: uppercase;
-  padding-bottom: 2px;
+  padding-bottom: 3px;
   border-bottom: 2px solid transparent; 
 }
 
@@ -586,7 +586,7 @@ body {
   display: inline-block;
   width: 78px;
   height: 78px;
-  margin-right: 8px;
+  margin-right: 10px;
   font-size: 0;
   vertical-align: top;
   text-decoration: none;
@@ -687,13 +687,13 @@ body {
 
 .price-header {
   display: block;
-  margin-top: 56px;
+  margin-top: 55px;
   font-size: 18px;
   line-height: 30px;
   font-weight: 700;
   color: #000000;
   text-transform: uppercase;
-  margin-bottom: 48px;
+  margin-bottom: 50px;
 }
 
 .range-filter {
@@ -923,7 +923,7 @@ input[type="checkbox"] +label:disabled::before {
 }
 
 .sorting {
-  margin-bottom: 53px;
+  margin-bottom: 55px;
 }
 
 .sorting-header {
@@ -1020,7 +1020,7 @@ input[type="checkbox"] +label:disabled::before {
   float: left;
   width: 360px;
   margin-right: 40px;
-  margin-bottom: 30px;
+  margin-bottom: 28px;
   position: relative;
 }
 
@@ -1131,6 +1131,7 @@ input[type="checkbox"] +label:disabled::before {
 
 .pages-navigation {
   width: 460px;
+  clear: both
 }
 
 .pages-navigation a {
