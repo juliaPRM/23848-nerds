@@ -9,9 +9,9 @@ body {
 }
 
 .main-header {
-   margin-bottom: 80px;
-   background-color: #eeeeee;
-   color: #000000;
+  margin-bottom: 80px;
+  background-color: #eeeeee;
+  color: #000000;
 }
 
 .container {
@@ -34,10 +34,6 @@ body {
 .mini-logo:active {
   opacity: 0.3;
 }
-
-
-
-
 
 .navigation {
   float: left;
@@ -157,6 +153,7 @@ body {
   border-radius: 50%;
   cursor: pointer;
   border: 7px solid white;
+  position: relative;
 }
 
 .slider input[type=radio] {
@@ -164,10 +161,24 @@ body {
   opacity:0;
 }
 
-#btn-1:checked ~ .slider-controls label[for="btn-1"],
-#btn-2:checked ~ .slider-controls label[for="btn-2"],
-#btn-3:checked ~ .slider-controls label[for="btn-3"] { 
-    background:#c1c1c1;
+#btn-1:checked ~ .slider-controls label[for="btn-1"]:after,
+#btn-2:checked ~ .slider-controls label[for="btn-2"]:after,
+#btn-3:checked ~ .slider-controls label[for="btn-3"]:after { 
+  display: block;
+  width: 8px;
+  height: 8px;
+  border: 2px solid #c1c1c1;
+  background-color: transparent;
+  box-sizing: border-box;
+  content: "";
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 
 .slide {
@@ -656,10 +667,9 @@ body {
 }
 
 .header-caption {
-  width: 100%;
-  margin-left: 217px;
   margin-top: 70px;
   padding-bottom: 70px;
+  text-align: center;
 }
 
 .header-caption h1 {
@@ -1305,7 +1315,6 @@ input[type="checkbox"] +label:disabled::before {
 }
 
 .write-form .letter-user {
-  width: 760px;
   min-height: 115px;
   padding: 15px 15px;
   font-size: 16px;
@@ -1317,6 +1326,8 @@ input[type="checkbox"] +label:disabled::before {
   border-radius: 2px;
   box-sizing: border-box;
   margin-top: 8px;
+  max-width: 760px;
+  min-width: 760px;
 }
 
 .write-form input:hover,
@@ -1338,14 +1349,13 @@ input[type="checkbox"] +label:disabled::before {
   color: #000000;
 }
 
+.write-form input:invalid,
+.write-form .letter-user:invalid {
+  border-color: #e74246;
+  color: #e74246;
+}
+
 .write-form .login-btn {
   padding: 17px 83px;
   margin-top: 44px;
 }
-
-
-
-
-
-
-
