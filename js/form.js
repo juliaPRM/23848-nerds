@@ -43,3 +43,6 @@ window.addEventListener("keydown", function(event) {
     }
   }
 });
+
+var html = document.documentElement;
+  html.className = html.className.replace("no-js","js");

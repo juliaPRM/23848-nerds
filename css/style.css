@@ -417,8 +417,6 @@ body {
 }
 
 .index-content-right img {
-  width: 360; 
-  height: 208;
   margin-bottom: 28px;
 }
 
@@ -1130,7 +1128,7 @@ input[type="checkbox"] +label:disabled::before {
 }
 
 .pages-navigation {
-  width: 460px;
+  min-width: 460px;
   clear: both
 }
 
@@ -1138,7 +1136,7 @@ input[type="checkbox"] +label:disabled::before {
   display: inline-block;
   min-width: 50px;
   height: 50px;
-  padding: 17px 0;
+  padding: 17px 5px;
   box-sizing: border-box;
   background: #eeeeee;
   vertical-align: middle;
